@@ -486,7 +486,7 @@ def main():
     page_id = extract_page_id(confluence_url)
 
     html_content = get_html_context_from_webpage(confluence_username, confluence_password, page_id)
-    # get the tools info of SoC and GFXIP 
+    # get the tools info of SoC and IP 
     soc_tool_info = get_soc_tool_info_from_webpage(html_content)  
     gfxip_tool_info = get_gfxip_tool_info(get_loaded_modules())  
       
